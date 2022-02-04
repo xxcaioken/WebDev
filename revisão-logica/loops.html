@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let contador = 0;
+      let n = prompt("Digite um número");
+      while (contador < 10) {
+        document.write(`${contador} * ${n} = ${contador * n} <br>`);
+        contador++;
+      }
+      console.log("saiu do loop while");
+      for (let j = 0; j <= 10; j++) {
+        document.write(`${j} * ${n} = ${j * n} <br>`);
+      }
+      console.log("saiu do loop for");
+      contador = 0;
+
+      do {
+        if (contador > 10) {
+          alert("contador maior que 10");
+          break;
+        }
+        document.write(`${contador} * ${n} = ${contador * n} <br>`);
+        contador++;
+      } while (contador <= 10);
+      {
+      }
+      console.log("saiu do loop do while");
+    </script>
+  </body>
+</html>

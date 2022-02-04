@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funções</title>
+</head>
+
+<body>
+    <h1>funções - tabuada 1 desafio </h1>
+    <button onclick="mostrarTabuada()">Mostrar tabuada</button>
+ 
+    <div id="output"></div>
+    <br>
+   
+   
+   <script>
+       
+       let contador = 1;
+     
+       let num1 = prompt("qual número você quer descobrir a tabuada?") 
+    
+       document.write(`você escolheu o número : ${num1} <br>`)
+     
+       
+       const output = document.getElementById("output")
+       while (contador <= 1000) {
+
+        document.write(`${contador} * ${num1} = ${contador * num1} <br>`);
+        contador++;
+      }
+
+       function mostrarTabuada(){
+output.innerHTML= `${num1} <br> `
+       }
+
+    </script>
+</body>
+
+</html>

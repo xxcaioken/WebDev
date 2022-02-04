@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funções</title>
+</head>
+<body>
+    <h1>funções</h1>
+<script>
+//declaração de função simples
+function oi(){
+    document.write("oi  <br>")
+}
+oi();
+//expressão de funções
+const ola = function(){
+    document.write("ola   <br>")
+}
+ola();
+//arrow function
+const saudacao = () =>{
+    document.write("saudações mundo <br>")
+}
+saudacao();
+//retorno de valores
+function obtemDiaDaSemana(){
+    return new Date().getDay()
+}
+let diaSemana = obtemDiaDaSemana();
+switch (diaSemana) {
+    case 0:
+        console.log ("domingo")
+    case 1:
+    console.log ("segunda")
+    case 2:
+    console.log ( "terça")
+    case 3:
+    console.log ("quarta")
+    case 4:
+    console.log ("quinta")
+    case 5:
+    console.log ("sexta")
+    case 6:
+    console.log ("sabado")
+}
+console.log(diaSemana)
+
+function somar(n1 = 0, n2 = 0){
+    return n1 + n2
+    alert(soma);
+}
+let soma = somar(3, 5)
+
+
+</script>
+</body>
+</html>
